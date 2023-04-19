@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutLVB1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewLVBUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutLVB2"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewLVB1"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewLVB2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

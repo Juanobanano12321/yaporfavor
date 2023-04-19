@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <View
+        android:id="@+id/viewRHelper1"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewRHelper2"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="106dp"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextRuserName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Nombre de Usuario"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:layout_editor_absoluteY="106dp"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextRfirstName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Apellido Paterno"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="203dp"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextRlastName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:layout_editor_absoluteY="203dp"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextRMail"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRGender"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextRNumber"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Número de Teléfono"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewRGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Género"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupRGender"
+        app:layout_constraintTop_toBottomOf="@+id/viewRHelper2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextRMail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRGender">
+
+        <RadioButton
+            android:id="@+id/radioButtonRGender1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            tools:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRGender2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            tools:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewRType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Usuario"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupRType"
+        app:layout_constraintTop_toBottomOf="@+id/viewRHelper2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextRNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRType">
+
+        <RadioButton
+            android:id="@+id/radioButtonRType1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alumno"
+            tools:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRType2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profesor"
+            tools:textSize="12sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextRAge"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/viewRHelper1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="544dp"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextRPassword"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        tools:layout_editor_absoluteY="544dp"
+        tools:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonRRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="Registrarse"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRBack"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRAge"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/buttonRBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:onClick="Volver"
+        android:text="Regresar"
+        app:layout_constraintStart_toEndOf="@+id/viewRHelper1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRPassword"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutWA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EB2C2C2C"
+    tools:context=".WebApi">
+
+    <View
+        android:id="@+id/viewWAHelper1"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewWA1" />
+
+    <TextView
+        android:id="@+id/textViewWA1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="AAAAAAAAAAAAA"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewWA1"
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWA1">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonWAReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#0067B8"
+        android:onClick="Regresar"
+        android:text="sssssssssssssssssss"
+        app:layout_constraintBottom_toTopOf="@+id/viewWAHelper1"
+        app:layout_constraintEnd_toStartOf="@+id/viewWAHelper1"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/buttonWARefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#0067B8"
+        android:onClick="Recargar"
+        android:text="aaaaaaaaaaaaaaa"
+        app:layout_constraintBottom_toTopOf="@+id/viewWAHelper1"
+        app:layout_constraintStart_toEndOf="@+id/viewWAHelper1"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
